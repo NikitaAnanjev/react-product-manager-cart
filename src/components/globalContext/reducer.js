@@ -44,7 +44,7 @@ const reducer = (state, action) => {
                 }
             }
             break;
-            case 'REMOVE_FROM_CART':
+        case 'REMOVE_FROM_CART':
 
             const productIndex = state.cart.findIndex((cartItem) => cartItem.id === action.id)
 

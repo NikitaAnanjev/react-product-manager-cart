@@ -1,17 +1,12 @@
 import React, {useState, useEffect} from "react";
-// DATA
-
 import Data from "../../data/data.json";
-
 import DataSourceNames from "../../data/names.json";
 import ManagerCategory from "./ManagerCategory";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-
 const DataList = Data.Value.Goods;
 let dataGroupId = []
 let productId = []
-
 
 const refreshData = (DataList) => {
     DataList.map((item, keys) => {
@@ -20,7 +15,6 @@ const refreshData = (DataList) => {
     })
 }
 refreshData(DataList)
-
 
 // REDUCE REPEATED ARRAYS FOR CATEGORIES
 const getUnique = (array) => {
@@ -35,7 +29,6 @@ const getUnique = (array) => {
     return uniqueArray;
 }
 const cleardataGroupId = getUnique(dataGroupId);
-
 
 // DATA _names
 const dataFromNames = Object.entries(DataSourceNames)
@@ -52,16 +45,12 @@ cleardataGroupId.map((value, key) => {
         Categories.push(filteredCat)
     })
 })
-
-
 const ManagerTable = () => {
     return (
         <div className="ManagerTable">
-
             <Container>
                 <Grid item  xs={12}>
                     <h1>Продукты</h1>
-
                     {
                         Categories.map((category, index) => (
                             <ManagerCategory
@@ -75,10 +64,7 @@ const ManagerTable = () => {
                     }
 
                 </Grid>
-
-
             </Container>
-
         </div>
     )
 }

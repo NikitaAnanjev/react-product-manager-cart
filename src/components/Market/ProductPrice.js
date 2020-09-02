@@ -1,7 +1,5 @@
 import React from 'react';
-
 const ProductPrice = (props) => {
-
     const {price} = props
     const currency = (price) => {
         const dollars = price
@@ -19,7 +17,5 @@ const ProductPrice = (props) => {
             }
         </div>
     );
-
 }
-
 export default ProductPrice
