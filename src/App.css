@@ -1,0 +1,36 @@
+body {
+    max-height: 100vh!important;
+}
+
+.MuiContainer-maxWidthLg {
+    width: 100%;
+    max-width: 100%!important;
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+.ManagerProduct__Price {
+    margin-right: 20px!important;
+}
+.MuiList-padding {
+    margin-bottom:5px!important;
+}
+.ManagerProduct {
+    width: 100%;
+    padding: 15px;
+}
+.MuiPaper-root {
+    width: 100%;
+    display: flex;
+flex-direction: row;
+}
+.MuiListItem-root,
+.MuiList-root{
+    width: 100%;
+    float: left;
+}
+
+
+.left {
+    float: left;
+    width: 100%;
+}
